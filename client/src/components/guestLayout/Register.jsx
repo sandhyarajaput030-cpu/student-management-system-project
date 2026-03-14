@@ -32,7 +32,7 @@ function Register() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/users/register",
+        "https://student-management-system-project-o25c.onrender.com/api/users/register",
         formData
       );
 
