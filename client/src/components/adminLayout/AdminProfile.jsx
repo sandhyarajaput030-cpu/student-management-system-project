@@ -11,7 +11,7 @@ import {
   Spinner
 } from "react-bootstrap";
 
-const API_BASE = "http://localhost:8000/api/users";
+const API_BASE = "https://student-management-system-project-o25c.onrender.com/api/users";
 
 const AdminProfile = () => {
   const [profile, setProfile] = useState(null);
