@@ -57,7 +57,7 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("http://localhost:8000/api/users/admin-dashboard", {
+      const res = await fetch("https://student-management-system-project-o25c.onrender.com/api/users/admin-dashboard", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -80,7 +80,7 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await fetch(
-        `http://localhost:8000/api/users/student/${studentId}/approve`,
+        `https://student-management-system-project-o25c.onrender.com/api/users/student/${studentId}/approve`,
         { method: "PATCH", headers: { Authorization: `Bearer ${token}` } }
       );
       const data = await res.json();
@@ -95,7 +95,7 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await fetch(
-        `http://localhost:8000/api/users/student/${studentId}/reject`,
+        `https://student-management-system-project-o25c.onrender.com/api/users/student/${studentId}/reject`,
         { method: "DELETE", headers: { Authorization: `Bearer ${token}` } }
       );
       const data = await res.json();
