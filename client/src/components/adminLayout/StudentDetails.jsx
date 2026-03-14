@@ -34,7 +34,7 @@ const fetchStudents = async () => {
     const token=localStorage.getItem("token");
 
     const res = await fetch(
-      "http://localhost:8000/api/users/all-students",
+      "https://student-management-system-project-o25c.onrender.com/api/users/all-students",
       {headers:{Authorization:`Bearer ${token}`}}
     );
 
@@ -124,7 +124,7 @@ const saveAttendance = async(student)=>{
     const attendanceDays = student.attendance[0].days;
 
     const res = await fetch(
-      `http://localhost:8000/api/users/student/${student._id}/update-details`,
+      `https://student-management-system-project-o25c.onrender.com/api/users/student/${student._id}/update-details`,
       {
         method:"PATCH",
         headers:{
