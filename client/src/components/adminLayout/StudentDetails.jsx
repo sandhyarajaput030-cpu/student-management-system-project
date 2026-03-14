@@ -165,7 +165,7 @@ const updateFee=(studentId,field,value)=>{
       const newFee={...s.fee,[field]:Number(value)};
 
       fetch(
-        `http://localhost:8000/api/users/student/${studentId}/update-details`,
+        `https://student-management-system-project-o25c.onrender.com/api/users/student/${studentId}/update-details`,
         {
           method:"PATCH",
           headers:{
