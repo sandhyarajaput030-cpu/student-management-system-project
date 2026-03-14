@@ -24,7 +24,7 @@ const StudentNoticeboard = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:8000/api/noticeboard/student",
+        "https://student-management-system-project-o25c.onrender.com/api/noticeboard/student",
         {
           headers: {
             Authorization: `Bearer ${token}`,
