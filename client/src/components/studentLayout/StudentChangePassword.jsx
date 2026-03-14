@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Container, Row, Col, Form, Button, Alert, Spinner, Card } from "react-bootstrap";
 
-const API_BASE = "http://localhost:8000/api/student"; // FIXED http
+const API_BASE = "https://student-management-system-project-o25c.onrender.com/api/student"; // FIXED http
 
 export default class ChangePassword extends React.Component {
   state = {
