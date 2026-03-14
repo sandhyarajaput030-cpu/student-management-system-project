@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 // ✅ Correct base URL
-const API_BASE = "http://localhost:8000/api/users";
+const API_BASE = "https://student-management-system-project-o25c.onrender.com/api/users";
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
