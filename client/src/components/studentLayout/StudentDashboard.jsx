@@ -16,7 +16,7 @@ const StudentDashboard = () => {
         }
 
         const res = await axios.get(
-          "http://localhost:8000/api/users/dashboard",
+          "https://student-management-system-project-o25c.onrender.com/api/users/dashboard",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
