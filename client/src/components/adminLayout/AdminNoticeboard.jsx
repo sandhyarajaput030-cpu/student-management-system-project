@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Card, Button, Form, Row, Col, Alert, Spinner } from "react-bootstrap";
 import axios from "axios";
 
-const API_BASE = "http://localhost:8000/api/noticeboard";
+const API_BASE = "https://student-management-system-project-o25c.onrender.com/api/noticeboard";
 
 const AdminNoticeboard = () => {
   const [notices, setNotices] = useState([]);
